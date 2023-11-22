@@ -115,7 +115,6 @@
                     >
                     <h5>Precio: 110 Bs</h5>
                 </div>
-                <h4>&emsp;&emsp;&emsp;Se realizan pedido especiales previa cotización</h4>
             </div>
             <div class="noticias">
                 <div class="contenidoNoticia">
@@ -128,6 +127,73 @@
                     <h5>Para una vida más próspera y una cosecha más abundante, bolivianos ofrecen mesas a la Pachamama.</h5>
                 </div>
             </div>
+        </div>
+        
+        <div class="ModoPago">
+            <h2>Modo de pago:</h2>
+            <h4 style="text-align: center; font-size: 25px;">Por Código QR (descuento especial)</h4>
+            <div class="ListaQR">
+                <div class="CodigoQR">
+                    <h4 style="text-align: center; font-size: 20px;">Yape</h4>
+                    <div class="button-container">
+                        <img class="iconoPago" src="imagenes/yape.png">
+                        <button class="botonQr" onclick="openModal('myModal1')">Haz clic aquí</button>
+                    </div>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                            <h3>Yape</h3>
+                            <h4>Escanea el código QR para pagar a:</h4>
+                            <p>Madelene Yola Torrez Muriel</p>
+                            <img class="imgCodigoQR" src="imagenes/CodigoQR.jpg">
+                            <h5>Vencimiento: 21/dic/2023</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="CodigoQR">
+                    <h4 style="text-align: center; font-size: 20px;">Banco Sol</h4>
+                    <div class="button-container">
+                        <img class="iconoPago" src="imagenes/BancoSol.jpg">
+                        <button class="botonQr" onclick="openModal('myModal2')">Haz clic aquí</button>
+                    </div>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                            <h3>Banco Sol</h3>
+                            <h4>Escanea el código QR para pagar a:</h4>
+                            <p>Madelene Yola Torrez Muriel</p>
+                            <img class="imgCodigoQR" src="imagenes/CodigoQRSol.jpg">
+                            <h5>Vencimiento: 30/ago/2024</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="CodigoQR">
+                    <h4 style="text-align: center; font-size: 20px;">Tigo Money</h4>
+                    <div class="button-container">
+                        <img class="iconoPago" src="imagenes/tigoMoney.png">
+                        <button class="botonQr" onclick="openModal('myModal3')">Haz clic aquí</button>
+                    </div>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                            <h3>Tigo Money</h3>
+                            <h4>Escanea el código QR para pagar a:</h4>
+                            <p>Madelene Yola Torrez Muriel</p>
+                            <img class="imgCodigoQR" src="imagenes/CodigoQRTM.jpg">
+                            <h5>Vencimiento: Sin vencimiento</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>&emsp;&emsp;&emsp;Se realizan pedido especiales previa cotización</h4>
+            <script>
+                function openModal(modalId) {
+                    document.getElementById(modalId).style.display = "block";
+                }
+                function closeModal(modalId) {
+                    document.getElementById(modalId).style.display = "none";
+                }
+            </script>
         </div>
         <div id="contactos">
             <hr>
@@ -163,10 +229,12 @@
                     <h5 class="inf">@Fabria de figuras. Para ver mas productos observa nuestro perfil de facebook haciendo clic al icono</h5>
                 </div>
                 <div class="infContacto">
-                    <img
-                    class="imgIcono"
-                    src="imagenes/IconoGmail.png"
-                    >
+                    <a href="mailto:madelenetorrez@gmail.com">
+                        <img
+                        class="imgIcono"
+                        src="imagenes/IconoGmail.png"
+                        >
+                    </a>
                     <h5 class="inf">Comunicate al gmail haciendo clic al icono</h5>
                 </div>
             </div>
