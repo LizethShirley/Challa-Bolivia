@@ -47,8 +47,7 @@ h1{
 .navegador{
     background:black; 
     margin: 0px;
-    height: 65px;
-
+    height: 10%;
     position:fixed;
     left: 0;
     top: 0;
@@ -319,4 +318,98 @@ h5{
     width: 100%;
     height: 100%;
     padding-top: 4rem;
+}
+
+@media (max-width: 900px) {
+    
+  .navegador{
+    height: 12%;
+  }
+  .img-home {
+    height: 12px;
+  }
+  
+  .itemNav {
+    text-align: left;
+    padding: -50px 5px;
+  }
+  
+  .listaNav {
+    float: none;
+    display: block;
+    margin-bottom: -25px;
+  }
+  .img-logo {
+    height: 70px;
+  }
+
+  h1{
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .portada{
+    width: 100%;
+    height: auto;
+  }
+  .item{
+    margin: 1px;
+    padding: 1px;
+    width: 100%;
+    height: 105px;
+}
+h3 {
+  font-size: 10px;
+}
+      .video {
+        width: 90%;
+        height: auto;
+      }
+      .descripcion{
+        padding: 5px 10px;
+    }
+      h2{
+        padding: 15px;
+        font-size: 25px;
+      }
+      .infProducto {
+        flex-direction: column;
+        align-items: center;
+        width: 10%;
+      }
+      .imgProducto {
+        width: 100%;
+        height: auto;
+      }
+      .noticias {
+        padding: 10px;
+      }
+      .videoYoutube {
+        width: 100%;
+        height: auto;
+      }
+  .ModoPago {
+    padding: 10px;
+      }
+      .CodigoQR {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      .imgCodigoQR {
+        width: 100%;
+        height: auto;
+      }
+      .infRedesSociales {
+        padding: 10px;
+        padding: 10px;
+      }
+      .infContacto {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .imgIcono {
+        height: 20px;
+      }
 }
